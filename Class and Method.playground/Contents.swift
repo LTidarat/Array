@@ -14,6 +14,23 @@ class MyClass {
         print("นี่คือ Method แบบ Void")
         
     }
+    
+    //Method Return Type
+    func myReturnType() -> Int {
+        let intResult = intNumber * 5
+        return intResult
+        
+    }
+    
+    //Method Argument And Return
+    func myOfficer(strTitle: String, strDetail: String) -> String {
+        let strOfficer = strTitle + " " + strName + " " + strDetail
+        return strOfficer
+        
+    }
+    
+    
+    
 
 } //MyClass
 
@@ -32,6 +49,15 @@ print("After ==> \(myClass.strName)")
 
 //การเรียกใช้งาน Method Void
 myClass.myVoidType()
+
+var intMyResult = myClass.myReturnType()
+
+
+var strMyStudent = myClass.myOfficer(strTitle: "Title", strDetail: "Detail")
+
+
+
+
 
 
 
